@@ -9,13 +9,13 @@
   {% include "./includes/navbar.html.j2" %}
   <div class="main-container">
     <p class="main-header">{{category}}</p>
-    <div class="index-list">
+    <div class="post-list">
       {% for cate in category_index %}
-      <div class="main_blog-post">
-        <a class="list-anchor" href="/blog/{{cate.file_name}}">
-          <div class="list-anchor__info">
-            <span class="info-title"> {{ cate.title }} </span>
-            <span class="info-date"> {{ cate.date }} </span>
+      <div class="post-container">
+        <a class="post-anchor" href="/blog/{{cate.file_name}}">
+          <div class="post-info">
+            <span class="post-info-title"> {{ cate.title }} </span>
+            <span class="post-info-date"> {{ cate.date }} </span>
           </div>
         </a>
       </div>

@@ -9,13 +9,13 @@
   {% include "./includes/navbar.html.j2" %}
   <div class="main-container">
     <p class="main-header">{{series}} Series</p>
-    <div class="index-list">
+    <div class="post-list">
       {% for series in series_meta %}
-      <div class="main_blog-post">
-        <a class="list-anchor" href="/blog/{{series.file_name}}">
-          <div class="list-anchor__info">
-            <span class="info-title"> {{series.title}} </span>
-            <span class="info-date"> {{series.date}} </span>
+      <div class="post-container">
+        <a class="post-anchor" href="/blog/{{series.file_name}}">
+          <div class="post-info">
+            <span class="post-info-title"> {{series.title}} </span>
+            <span class="post-info-date"> {{series.date}} </span>
           </div>
         </a>
       </div>

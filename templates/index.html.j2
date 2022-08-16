@@ -8,19 +8,19 @@
   {% include "includes/header_logo.html.j2" %}
   {% include "./includes/navbar.html.j2" %}
   <div class="main-container">
-    <div class="index-list">
+    <div class="post-list">
       {% for blog in blog_index %}
-      <div class="index-container">
-        <a class="list-anchor" href="/blog/{{blog.file_name}}">
-          <div class="list-anchor__info">
-            <span class="info-title"> {{ blog.title }} </span>
-            <span class="info-date"> {{ blog.date }} </span>
+      <div class="post-container">
+        <a class="post-anchor" href="/blog/{{blog.file_name}}">
+          <div class="post-info">
+            <span class="post-info-title"> {{ blog.title }} </span>
+            <span class="post-info-date"> {{ blog.date }} </span>
           </div>
         </a>
-        <div class="info-tags">
+        <div class="post-tags">
           {% for tag in blog.tags %}
-          <a class="info-tag-anchor" href="/category/{{tag}}">
-            <span class="info-tag-span">{{ tag }}</span>
+          <a class="post-tags-anchor" href="/category/{{tag}}">
+            <span class="post-tags-span">{{ tag }}</span>
           </a>
           {% endfor %}
         </div>
