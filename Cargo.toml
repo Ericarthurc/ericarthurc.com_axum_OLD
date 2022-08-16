@@ -1,0 +1,26 @@
+[package]
+name = "ericarthurc"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+axum = "0.5"
+comrak = "0.14.0"
+askama = "0.11"
+tower = { version = "0.4", features = ["full"] }
+tower-http = { version = "0.3", features = ["full"] }
+async-fs = "1.5.0"
+tracing = "0.1"
+tracing-subscriber = { version="0.3", features = ["env-filter"] }
+http = "0.2"
+http-body = "0.4"
+chrono = "0.4"
+futures-lite = "1.12"
+dotenv = "0.15.0"
+tower-cookies = "0.7"
+jsonwebtoken = "8"

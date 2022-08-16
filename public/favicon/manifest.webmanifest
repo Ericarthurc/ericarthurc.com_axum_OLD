@@ -1,0 +1,23 @@
+{
+  "name": "Ericarthurc",
+  "short_name": "Ericarthurc",
+  "theme_color": "#0d1017",
+  "background_color": "#0d1017",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "description": "Blog",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/public/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

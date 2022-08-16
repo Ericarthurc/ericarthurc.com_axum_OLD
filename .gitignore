@@ -1,0 +1,10 @@
+# Rust
+/target
+
+# Node | Webpack
+node_modules
+/public/js/*.bundle.js
+
+# Environment
+.env
+yarn-error.log
