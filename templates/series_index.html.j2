@@ -5,19 +5,19 @@
 {% block head %}{% endblock %}
 
 {% block content %}
-  {% include "includes/header_logo.html.j2" %}
-  {% include "./includes/navbar.html.j2" %}
-  <div class="main-container">
-    <div class="post-list">
-      {% for series in series_index %}
-      <div class="post-container">
-        <a class="post-anchor" href="/series/{{series}}">
-          <div class="post-info">
-            <span class="post-info-title"> {{series}} </span>
-          </div>
-        </a>
-      </div>
-      {% endfor %}
+{% include "includes/header_logo.html.j2" %}
+{% include "./includes/navbar.html.j2" %}
+<div class="main-container">
+  <div class="post-list">
+    {% for series in series_index %}
+    <div class="post-container">
+      <a class="post-anchor-alt" href="/series/{{series}}">
+        <div class="post-info">
+          <span class="post-info-title"> {{series}} </span>
+        </div>
+      </a>
     </div>
+    {% endfor %}
   </div>
+</div>
 {% endblock %}
