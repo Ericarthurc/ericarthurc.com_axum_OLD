@@ -1,6 +1,6 @@
 [package]
 name = "ericarthurc"
-version = "1.1.1"
+version = "1.1.2"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -23,4 +23,4 @@ chrono = "0.4"
 futures-lite = "1.12"
 dotenv = "0.15.0"
 tower-cookies = "0.7"
-jsonwebtoken = "8"
+jsonwebtoken = "8.1.1"

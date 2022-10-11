@@ -8,15 +8,17 @@ use std::env;
 
 #[derive(Debug, PartialEq, Serialize, Deserialize)]
 pub struct Claims {
-    id: String,
+    password: String,
+    pin: String,
     exp: i64,
 }
 
-pub fn generate_jwt(user_id: String) -> Result<String, jsonwebtoken::errors::Error> {
+pub fn generate_jwt(password: String, pin: String) -> Result<String, jsonwebtoken::errors::Error> {
     match encode(
         &Header::default(),
         &Claims {
-            id: user_id,
+            password,
+            pin,
             exp: Utc::now().timestamp()
                 + env::var("JWT_EXPIRATION").unwrap().parse::<i64>().unwrap(),
         },

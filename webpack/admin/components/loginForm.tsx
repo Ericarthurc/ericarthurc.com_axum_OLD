@@ -8,8 +8,8 @@ interface Props {
 
 const LoginForm = (props: Props) => {
   const [formState, setFormState] = useState({
-    username: '',
     password: '',
+    pin: '',
   });
 
   const loginFormHandler = async (e: Event) => {
@@ -26,19 +26,6 @@ const LoginForm = (props: Props) => {
   return (
     <>
       <form onSubmit={loginFormHandler}>
-        <label htmlFor="username">
-          Username:
-          <input
-            type="text"
-            onInput={(e) => {
-              let target = e.target as HTMLInputElement;
-              setFormState({ ...formState, username: target.value });
-            }}
-            value={formState.username}
-            name="username"
-          />
-        </label>
-
         <label htmlFor="password">
           Password:
           <input
@@ -49,6 +36,19 @@ const LoginForm = (props: Props) => {
             }}
             value={formState.password}
             name="password"
+          />
+        </label>
+
+        <label htmlFor="pin">
+          Pin:
+          <input
+            type="password"
+            onInput={(e) => {
+              let target = e.target as HTMLInputElement;
+              setFormState({ ...formState, pin: target.value });
+            }}
+            value={formState.pin}
+            name="pin"
           />
         </label>
 

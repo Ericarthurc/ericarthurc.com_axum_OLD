@@ -2,7 +2,7 @@
 title: To New Seasons
 date: April 9, 2022
 tags: new season, next gen, rust, blog
-series:
+series: blog
 ---
 
 # To New Seasons
